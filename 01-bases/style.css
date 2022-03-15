@@ -1,0 +1,36 @@
+h2{
+    background:black;
+    color:white;
+    padding: 4px;
+}
+
+td{
+    width:30px;
+    height:30px;
+    border:1px solid black;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+/*
+even : pair
+odd : impair
+*/
+tr:nth-child(even) td:nth-child(odd){
+    background:black;
+}
+
+tr:nth-child(odd) td:nth-child(even){
+    background:black;
+}
+
+/* tr:nth-child(odd) td:nth-child(odd){
+    background:pink;
+}
+
+tr:nth-child(even) td:nth-child(even){
+    background:pink;
+} 
+*/

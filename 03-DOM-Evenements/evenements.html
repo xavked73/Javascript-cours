@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Evenements</title>
+    <link rel="stylesheet" href="evenements.css">
+    <script src="evenements.js"></script>
+</head>
+<body>
+    <h1>Evénements</h1>
+
+    <h2>click</h2>
+    <div class="carre vert" id="div1"></div>
+
+    <a href="https://youtube.fr" class="confirm" target="_blank">Aller sur youtube</a><br>
+    <a href="https://amazon.fr" class="confirm" target="_blank">Aller sur Amazon</a>
+    <a href="https://google.fr" class="" target="_blank">Aller sur Google</a>
+
+    <h2>dblclick</h2>
+    <div class="carre rouge" id="div2"></div>
+
+    <h2>mouseover,mouseout,mousedown,mouseup</h2>
+    <div class="carre bleu" id="div3"></div>
+
+    <h2>click et input</h2>
+    <input type="password" id="mdp"> <span id="eye">&#128065;</span>
+
+    <h2>keypress, keydown, keyup, input</h2>
+
+    <input type="text" id="saisie" maxlength="10"> <span id="nbchar"></span>
+
+    <h2>change, focus, blur</h2>
+
+    <label for="nom">Votre nom</label>
+    <input type="text" id="nom" name="nom" placeholder="votre nom">
+
+    <select id="langue">
+        <!-- astuce pour donner une indication sans valeur et inciter l'utilisateur a faire un choix -->
+        <option disabled selected>Faire un choix</option>
+        <option value="fr">Français</option>
+        <option value="en">Anglais</option>
+        <option value="es">Espagnol</option>
+    </select>
+    <input type="checkbox" id="rgpd"><label for="rgpd">J'accèpte la politique...</label>
+
+    <select id="region"></select>
+    <select id="departement"></select>
+
+
+
+    <div id="monmenu" class="invisible">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+        </ul>
+    </div>
+
+    
+    
+</body>
+</html>

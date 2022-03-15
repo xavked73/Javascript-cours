@@ -1,0 +1,41 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#personnage{
+
+    width:50px;
+    height:50px;
+    background-image: url(img/zelda.png);
+    background-position-y:-150px;  
+    position:relative;
+    left:0;
+    /* animation:marche 0.7s steps(3) infinite,
+    avance 4s linear infinite ; */
+}
+
+@keyframes marche {
+
+    0%{
+        background-position-x:0;
+    }
+    100%{
+        background-position-x:-150px;
+    }
+
+}
+
+/* @keyframes avance{
+    0%{
+        left:0;
+    }
+    100%{
+        left:calc(100% - 50px);
+    }
+} */
+
+
+
+

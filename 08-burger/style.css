@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;   
+}
+
+nav h1 {
+    margin-left: 25px;
+    z-index: 99;
+}
+
+nav ul {
+    margin-right: 25px;
+    display: flex;
+    list-style: none;  
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#burger {
+    border: 1px solid white;
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-right: 25px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+
+@media screen and (max-width:680px) {
+    #burger {
+        display: flex;
+    }
+
+    nav ul {
+        /* display:none; */
+        position: absolute;
+        flex-direction: column;
+        background: black;
+        /* width: 50%; */
+        width:100%;
+        /* left:50%; */
+        top: -600%;
+    }
+
+    nav ul li {
+        padding: 8px;
+        /* text-align: right; */
+        text-align:center;
+    }
+
+}
+
+@keyframes descente {
+    0% {
+        top: -600%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes remontee {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -600%;
+    }
+}

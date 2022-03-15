@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- lorsque le formulaire contient des input type="file" : enctype="multipart/form-data" -->
+    <form method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Inscription</legend>
+
+            <div>
+                <label for="pseudo">Pseudo</label>
+                <input type="text" id="pseudo" name="pseudo">
+            </div>
+
+            <div>
+                <label for="avatar">
+                    <img src="placeholder.gif" alt="avatar" id="preview">
+                </label>
+                <input type="file" id="avatar" name="avatar" accept="image/jpeg,image/png">
+            </div>
+
+            <div>
+            <button type="submit">Envoyer</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

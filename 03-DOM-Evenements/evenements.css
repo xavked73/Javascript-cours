@@ -1,0 +1,76 @@
+.carre{
+    width:100px;
+    height:100px;
+}
+
+.rond{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+
+.border{
+    border:2px solid black;
+}
+
+.vert{ background:green;}
+.rouge{ background:red;}
+.bleu{background:blue;}
+.violet{background:purple;}
+
+a{
+    color:cyan;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a:visited{
+    color:orange;
+}
+
+/* combinateurs CSS */
+
+/* > enfant direct */
+section>div{
+    color:white;
+}
+/* parent/enfant */
+section div{
+    color:white;
+}
+
+/* voisin (après) */
+section+div{
+    color:white;
+}
+/* voisins(après) */
+section~div{
+    color:white;
+}  
+
+#monmenu{
+    border:3px solid black;
+    background:lightgray;    
+    width:200px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate3d(-50%,-50%,0); /* décale le centre de gravité de ma div */
+}
+#monmenu ul{
+    list-style:none;
+}
+#monmenu ul li a {
+    color:black;
+}
+
+.invisible{
+    display:none;
+}
+
+#eye{
+    cursor:pointer;
+}
